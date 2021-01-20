@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body { 
+
+    height: 100%;
+    width: 100%;
+}
+
+
+img{
+    display: block;
+}
+
+#content{
+    position: static;
+    height: 100%;
+    width: 100%;
+}
+
+#container{
+    width:70%;
+    height: 90%;
+    position: absolute;
+    margin: 5vh 15% 5vh 15%;
+}
+
+.photo-container{
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.photo{
+    width: calc(94% / 3);
+    height: 46%;
+    float:left;
+    min-width: 200px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 1%;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+    cursor:pointer;
+    transform: scale(1.01);
+    
+}
+
+.photo img:hover{
+    
+    transform: scale(1.1);
+    
+}
+#gallery{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+#gallery-background{
+    position:fixed;
+    width: 100%;
+    height: 100%
+
+}
+.gallery-backgroundClicked{
+    z-index: 13;
+    background-color: gray;
+    opacity: 0.8;
+}
+
+
+
+#galleryDiv img{
+    
+    height: 80vh;
+    display:block;
+    
+}
+
+.galleryDivClicked{
+    z-index: 14;
+}
+
+
+#exitDiv{
+    position: absolute;
+    top:10px;
+    right:10px;
+    width: 3%;
+    z-index: 14;
+}
+
+#exitDiv img{
+    display:block;
+    width: 100%;
+    cursor: pointer;
+}
+
+#exitDiv img:hover{
+    transform: scale(1.05);
+}  
+
+
+#leftArrow{
+    position: absolute;
+    z-index: 14;
+    left: 10%;
+    width: 3%;
+}
+
+#leftArrow img{
+    width: 100%;
+    cursor: pointer;
+}
+#leftArrow img:hover{
+    transform: scale(1.05);
+}
+
+#rightArrow{
+    position: absolute;
+    z-index: 14;
+    left: 90%;
+    width: 3%;
+}
+
+#rightArrow img{
+    width: 100%;
+    cursor: pointer;
+}
+
+#rightArrow img:hover{
+    transform: scale(1.05);
+}
