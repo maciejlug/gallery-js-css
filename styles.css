@@ -4,7 +4,7 @@
 }
 
 html, body { 
-
+    
     height: 100%;
     width: 100%;
 }
@@ -82,17 +82,11 @@ img{
     opacity: 0.8;
 }
 
-
-#galleryDiv {
-    max-width: 60vh;
-}
-
-
 #galleryDiv img{
-
-    height: 75vh;
+    max-width: 75vw;
+    max-height: 70vh;
     display:block;
-    
+
 }
 
 .galleryDivClicked{
@@ -122,7 +116,7 @@ img{
 #leftArrow{
     position: absolute;
     z-index: 14;
-    left: 10%;
+    left: 7%;
     width: 3%;
 }
 
